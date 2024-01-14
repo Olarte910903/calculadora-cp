@@ -1,0 +1,73 @@
+@import "variables";
+
+@include allzero();
+
+h1{
+    font-family: $red-hat;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container{
+    @include w-h (100vw, 100vh);
+    background-color: $color-base;
+    @include flex (center, center);
+    font-family: $red-hat;
+}
+
+form{
+    @include w-h (30vw, 50vh);
+    @include m-p (1rem, 1rem);
+    @include b-radius (1rem);
+    align-self: center;
+    @include flex (center, space-between, column);
+    border: solid 3px darkblue;
+    label{
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+    input{
+        @include w-h (50%, 9%);
+        @include b-radius(0.5rem);
+        background-color: antiquewhite;
+        font-family: $red-hat;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    button{
+        @include w-h (30%, 9%);
+        @include m-p(20px, 1px);
+        @include b-radius(1rem);
+        font-family: $red-hat;
+        font-size: 1rem;
+        font-weight: 100;
+        background-color: black;
+        color: white;
+
+    }
+}
+
+.container-datos {
+    @include w-h(50vw, 50vh);
+    @include m-p(15px, 20px);
+    @include b-radius (1rem);
+    border: solid red 3px;
+    align-self: center;
+    @include flex(start, space-evenly, column);
+    .container-medidas{
+        @include w-h (100%, 80%);
+        @include flex(center, space-evenly, column);
+        @include b-radius(1rem);
+        text-align: center;
+        background-color: antiquewhite;
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .container-resultado{
+        @include w-h(100%, 10%);
+        text-align: center;
+        font-size: 2rem;
+    }
+}

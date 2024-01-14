@@ -1,0 +1,32 @@
+@mixin allzero (){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+@mixin flex ($align, $justify, $direction: row)
+{
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin w-h ($width, $height)
+{
+    width: $width;
+    height: $height;
+}
+
+@mixin m-p ($margin, $padding)
+{
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin b-radius ($border-radius)
+{
+    border-radius: $border-radius;
+}
