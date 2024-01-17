@@ -2,9 +2,9 @@
 
 class Calculo
 {
-    public function cantidadMaxima ($xp, $yp, $xt, $yt)
+    public function calcularCantidadMaxima ($pliegoX, $pliegoY, $corteX, $corteY)
     {
-        $cantidadMaxima = floor(($xp / $xt)) * floor(($yp / $yt));
+        $cantidadMaxima = floor(($pliegoX / $corteX)) * floor(($pliegoY / $corteY));
 
         return round($cantidadMaxima, 0, PHP_ROUND_HALF_DOWN);
 

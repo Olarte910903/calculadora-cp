@@ -15,7 +15,7 @@ if (isset($_POST["pliego-x"], $_POST["pliego-y"], $_POST["corte-x"], $_POST["cor
 
     $calculoCorte = new Calculo();
 
-    $resultado = $calculoCorte->cantidadMaxima($_POST["pliego-x"], $_POST["pliego-y"], $_POST["corte-x"], $_POST["corte-y"]);
+    $resultado = $calculoCorte->calcularCantidadMaxima($_POST["pliego-x"], $_POST["pliego-y"], $_POST["corte-x"], $_POST["corte-y"]);
 } else {
     echo "";
 }
