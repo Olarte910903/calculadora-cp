@@ -4,3 +4,4 @@ Esta calculadora nos permite calcular el máximo de tamaños que podemos obtener
 
 Está escrita en PHP y estilizada con SASS.
 
+http://calculadora-cp.great-site.net/
